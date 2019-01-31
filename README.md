@@ -28,14 +28,21 @@ $ java -jar json2protobuf-1.0-SNAPSHOT.jar
 ## Test
 
 ### Test with postman
+![postman](2019-01-30_14-22-35.png)
 
 ### Test with curl 
 
-```
-curl http://localhost:8080/person/save \
+1. The 1st curl command to create the session
+```sh
+$ curl http://localhost:8080/person/save \
   -H "Content-Type: application/json; charset=UTF-8" \
   -d '{"name":"xyz","id":"123"}' 
+```
 
+2. To use the session created in step 1, use --cookie "JSESSIONID=<session id>;"  
+   You can find session id from disk file name which is in format of protobuf_<session id>.txt, like protobuf_node0108p2if0otxusdw2secos8pr1.txt
+
+```
 curl http://localhost:8080/person/save \
   -H "Content-Type: application/json; charset=UTF-8" \
   -d '{"name":"xyz","id":"123"}' \
