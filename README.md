@@ -15,6 +15,7 @@
   Apache Maven 3.5.2
   Maven home: /usr/share/maven
   ```
+4. docker and docker-compose
 
 ## populate jar file
 ```sh
