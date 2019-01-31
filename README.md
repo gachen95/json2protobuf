@@ -16,13 +16,26 @@
   Maven home: /usr/share/maven
   ```
 
-## Run
+## populate jar file
 ```sh
 $ git clone https://github.com/gachen95/json2protobuf.git
 $ cd json2protobuf
 $ mvn clean install
-$ cd target
-$ java -jar json2protobuf-1.0-SNAPSHOT.jar
+```
+After that, there is ./target/json2protobuf-1.0-SNAPSHOT.jar
+
+## Run
+
+two options to run it
+### 1. run it with docker-compse
+
+```sh
+$ docker-compose up -d
+```
+
+### 2. run it without docker/docker-compose
+```sh
+$ java -jar ./target/json2protobuf-1.0-SNAPSHOT.jar
 ```
 
 ## Test
