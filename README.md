@@ -21,7 +21,7 @@
 1. class JsonProtoBufServer: embedded jetty server
 2. class SavePerson: receive json data format {“name:” “<name>”, “id”: <number>} and save into file in protobuf format. 
 
-File name format is protobuf_session id.txt, so all the json data from the same session will be saved to the same file.
+File name format is protobuf_**session id**.txt, so all the json data from the same session will be saved to the same file.
 
 ## populate jar file
 ```sh
@@ -60,7 +60,7 @@ $ curl http://localhost:8080/person/save \
 ```
 
 2. To use the session created in step 1, use --cookie "JSESSIONID=<session id>;"  
-   You can find session id from disk file name which is in format of protobuf_<session id>.txt, like protobuf_node0108p2if0otxusdw2secos8pr1.txt
+   You can find session id from disk file name which is in format of protobuf_**session id**.txt, like protobuf_node0108p2if0otxusdw2secos8pr1.txt
 
 ```
 curl http://localhost:8080/person/save \
