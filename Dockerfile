@@ -6,4 +6,4 @@ COPY ./target/json2protobuf-1.0-SNAPSHOT.jar /json2protobuf-1.0-SNAPSHOT.jar
 # expose port 8080
 EXPOSE 8080
 # specify default command
-CMD ["/usr/bin/java", "-jar", , "/json2protobuf-1.0-SNAPSHOT.jar"]
+CMD ["/usr/bin/java", "-jar", "/json2protobuf-1.0-SNAPSHOT.jar"]
