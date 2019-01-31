@@ -2,7 +2,7 @@
 FROM openjdk:8-jre-alpine
 MAINTAINER Richard Chen
 # copy application JAR
-COPY ./target/jsonprotobuf-1.0-SNAPSHOT.jar /json2protobuf-1.0-SNAPSHOT.jar
+COPY ./target/json2protobuf-1.0-SNAPSHOT.jar /json2protobuf-1.0-SNAPSHOT.jar
 # expose port 8080
 EXPOSE 8080
 # specify default command
