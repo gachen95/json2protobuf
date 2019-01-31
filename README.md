@@ -21,7 +21,7 @@
 1. class JsonProtoBufServer: embedded jetty server
 2. class SavePerson: receive json data format {“name:” “<name>”, “id”: <number>} and save into file in protobuf format. 
 
-File name format is protobuf_<session id>.txt, so all the json data from the same session will be saved to the same file.
+File name format is protobuf_session id.txt, so all the json data from the same session will be saved to the same file.
 
 ## populate jar file
 ```sh
