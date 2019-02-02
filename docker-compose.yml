@@ -2,7 +2,6 @@ version: '2'
 
 services:
   jsonprotbuf:
-    network_mode: "bridge"
     build:
       context: ./
       dockerfile: Dockerfile
